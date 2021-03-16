@@ -1,0 +1,32 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Job Monitor',
+                typeNamePlural: 'Job Monitor',
+                title: { type: #STANDARD, value: 'JobName' } } }
+annotate view ZC_JOB_Monitor with
+{
+  @UI: { lineItem:       [ { position: 10 } ],
+         identification: [ { position: 10 } ] }
+  JobUuid;
+
+  @UI: { lineItem:       [ { position: 20 } ],
+        identification: [ { position: 20 } ] }
+  Jobname;
+
+  @UI: { lineItem:       [ { position: 30 } ],
+        identification: [ { position: 30 } ] }
+  DocumentNo;
+
+  @UI: { lineItem:       [ { position: 40 } ],
+        identification: [ { position: 40 } ] }
+  TermDays;
+
+  @UI: { lineItem:       [ { position: 50 } ],
+        identification: [ { position: 50 } ] }
+  CreationDate;
+
+  @UI: { lineItem:       [ { position: 10 } ],
+        identification: [ { position: 10 } ] }
+  CreationTime;
+
+}

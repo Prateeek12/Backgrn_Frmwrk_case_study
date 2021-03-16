@@ -1,0 +1,39 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: { typeName: 'Job Monitor Details ',
+                typeNamePlural: 'Job Monitor Details',
+                title: { type: #STANDARD, value: 'JobName' } } }
+annotate view ZC_BCK_JOB_MON_DTL
+    with 
+{
+
+   @UI.facet: [{ 
+                 id:      'Details',
+                 purpose:   #STANDARD,
+                 type:      #IDENTIFICATION_REFERENCE,
+                 label:     'Details',
+                 position:  10    }] 
+                 
+                 
+   @UI: { lineItem:       [ { position: 10 } ],
+         identification: [ { position: 10, label: 'Job Name' } ] }
+    Jobname;
+    
+   @UI: { lineItem:       [ { position: 20 } ],
+         identification: [ { position: 20, label: 'Job Run Date' } ] }    
+    Rundt;
+    
+   @UI: { lineItem:       [ { position: 30 } ],
+         identification: [ { position: 30, label: 'Seq No' } ] }    
+    Rowsq;
+    
+   @UI: { lineItem:       [ { position: 40 } ],
+         identification: [ { position: 40, label: 'Spool Output Fields' } ] }    
+    Outfield;
+    
+   @UI: { lineItem:       [ { position: 50 } ],
+         identification: [ { position: 50, label: 'Spool Output Values' } ] }    
+    Outvalues;
+
+    
+}
