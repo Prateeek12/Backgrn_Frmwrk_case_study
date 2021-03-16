@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defination for Job mon Header'
+define service ZUI_BCK_JOB_MON_HD {
+  expose ZC_BCK_JOB_MON_HD as Header;
+  expose ZC_BCK_JOB_MON_DTL as Details;
+}
